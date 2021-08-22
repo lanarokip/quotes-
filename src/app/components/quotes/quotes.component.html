@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-sm">
+        <h1 class="text-danger">Quotes of the week</h1>
+    <hr>
+<div class="row">
+    <div *ngFor='let quotes of quote;let i = index' class="col-sm-4 border success" >
+      <h1 class="btn-dark">{{quotes.genre}}</h1>
+      <p>{{quotes.body}}</p>
+      <p><i>-author: {{quotes.author}} posted on {{quotes.datepublished | date}}</i></p>
+  
+      <button type="button" class="btn btn-primary" (click)='toggle(i)'>see more</button>
+      
+      <app-quote-details *ngIf='quotes.showDetails'[quote]='quotes' (remove) = 'completeGoal($event,i)'></app-quote-details>
+    </div>
+</div>
+  
+    </div>
+    <div class="col-sm">
+        <app-quote-form (addquote)="addNewQuote($event)"></app-quote-form>
+    </div>
+</div>
+

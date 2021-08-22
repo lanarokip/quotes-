@@ -15,21 +15,21 @@ export class QuoteDetailsComponent implements OnInit {
   faThumbsDown=faThumbsDown;
   faThumbsUp = faThumbsUp;
 
-  like: number =0;
-  dislike: number =0;
+  
+  // dislike: number =0;
   @Input() quote!:Quotes;
   @Output() remove = new EventEmitter<boolean>();
-
+  noOflike: number =0;
   delete(complete:boolean){
     this.remove.emit(complete);
   }
   constructor() { }
  
   Like(){
-    this.like++
+    this.noOflike++; 
   }
   Dislike(){
-    this.dislike++
+    this.noOflike--;
   }
   ngOnInit(): void {
   }

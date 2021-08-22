@@ -3,7 +3,7 @@
         <h1 class="text-danger">Quotes of the week</h1>
     <hr>
 <div class="row">
-    <div *ngFor='let quotes of quote;let i = index' class="col-sm-4 border success" >
+    <div *ngFor='let quotes of quote;let i = index' class="col-sm-4 border success mt-3 " >
       <h1 class="btn-dark">{{quotes.genre}}</h1>
       <p>{{quotes.body}}</p>
       <p><i>-author: {{quotes.author}} posted on {{quotes.datepublished | date}}</i></p>

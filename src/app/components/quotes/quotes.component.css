@@ -1,3 +1,5 @@
 .success{
     background-color: rgba(245, 245, 220, 0.336);
+    margin-left: 30px;
+    box-shadow: 4px 5px 9px 3px rgb(36, 73, 5);
 }

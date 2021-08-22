@@ -8,12 +8,14 @@ import { QuoteDetailsComponent } from './components/quote-details/quote-details.
 import { QuoteFormComponent } from './components/quote-form/quote-form.component';
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CountPipe } from './count.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     QuotesComponent,
     QuoteDetailsComponent,
     QuoteFormComponent,
+    CountPipe,
 
   ],
   imports: [

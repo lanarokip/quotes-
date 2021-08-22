@@ -31,7 +31,7 @@
 
         </div>
         <div class="form-group">
-            <label for="inputdate">date quote was inputted</label>
+            <label for="inputdate">date quote was inputted</label><br>
             <input type='date' id="datepublished" [(ngModel)]="newquotes.datepublished" name="datepublished" #datepublished = 'ngModel' required >
             <div [hidden]=" datepublished.valid || datepublished.pristine" class="alert alert-danger" >
                 <p>author is required</p>

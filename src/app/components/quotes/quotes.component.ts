@@ -16,14 +16,14 @@ export class QuotesComponent implements OnInit {
       'John Green',
       'As he read, I fell in love the way you fall asleep: slowly, and then all at once.',
       'it tells more of the love life',
-      new Date(2019,3,4)
+      new Date(2000,3,10)
     ),
     new Quotes(
       'war',
       'anonymous',
       'Our Generation has had no Great war, no Great Depression. Our war is spiritual. Our depression is our lives.',
       'tels of the strugles we go through',
-      new Date(2019,3,4)
+      new Date(2021,3,4)
     ),
   ];
   addNewQuote(quote){

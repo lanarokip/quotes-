@@ -9,6 +9,7 @@ import { QuoteFormComponent } from './components/quote-form/quote-form.component
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CountPipe } from './count.pipe';
+import { FooterComponent } from './components/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +17,7 @@ import { CountPipe } from './count.pipe';
     QuoteDetailsComponent,
     QuoteFormComponent,
     CountPipe,
+    FooterComponent,
 
   ],
   imports: [

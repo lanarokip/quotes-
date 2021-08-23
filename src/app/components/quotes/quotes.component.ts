@@ -13,16 +13,16 @@ export class QuotesComponent implements OnInit {
   quote: Quotes[]=[
     new Quotes(
       'love',
-      'david lee',
-      'love her like no other',
+      'John Green',
+      'As he read, I fell in love the way you fall asleep: slowly, and then all at once.',
       'it tells more of the love life',
       new Date(2019,3,4)
     ),
     new Quotes(
-      'love',
-      'david lee',
-      'love her like ggggtg',
-      'it tells more of the love life',
+      'war',
+      'anonymous',
+      'Our Generation has had no Great war, no Great Depression. Our war is spiritual. Our depression is our lives.',
+      'tels of the strugles we go through',
       new Date(2019,3,4)
     ),
   ];

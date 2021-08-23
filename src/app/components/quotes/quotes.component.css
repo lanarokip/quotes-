@@ -1,5 +1,8 @@
 .success{
-    background-color: rgba(245, 245, 220, 0.336);
+    background-color: rgba(247, 247, 242, 0.336);
     margin-left: 30px;
-    box-shadow: 4px 5px 9px 3px rgb(36, 73, 5);
+    box-shadow: 4px 5px 9px 3px rgba(18, 19, 18, 0.219);
+}
+.success:hover{
+    background-color: rgba(51, 48, 48, 0.24);
 }

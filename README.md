@@ -25,7 +25,7 @@ The following languages have been used to develop the project
         <li>Angular framework</li>
     </ol>
 ## Live link
-Here's the link to the project's [Live site]
+Here's the link to the project's [https://lanarokip.github.io/quotes-/]
 ### Bugs
 No bugs have been identified in the project.
 ### Contact information

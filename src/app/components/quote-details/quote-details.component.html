@@ -1,15 +1,35 @@
 <p><i>-{{quote.author}}</i></p>
-<p>{{noOflike}}</p>
 
-<div class="row mt-5">
+
+<div class=" mt-5">
     <p>posted in {{quote.datepublished|count}}</p>
-    <button type="button" class="btn btn-danger col-sm-3" (click)= 'delete(true)' ><fa-icon [icon]="faCoffee"></fa-icon></button>
+    <div class="row">
+        <div class="col-md-6">
+            <span class="text-danger">delete quote*</span> 
+        </div>
+        <div class="col-md-6">
+            <button type="button" class="btn btn-danger" (click)= 'delete(true)' ><fa-icon [icon]="faCoffee"></fa-icon></button>
+        </div>
+    </div>
+  
 
     <!-- <div class="col-sm-1 danger"> -->
-        <button type="button" (click)="Like()" class="btn btn-light"><fa-icon [icon]="faThumbsDown" class="text-danger col-sm-3" ></fa-icon></button>
+    
+        <div class="row justify-content-center mt-2">
+        
+            <div class="col-md-3">
+                <button type="button" (click)="Dislike()" class="btn btn-light"><fa-icon [icon]="faThumbsDown" class="text-danger col-sm-3" ></fa-icon></button>
+            </div>
+            <div class="col-md-3 text-center">
+                <p>{{noOflike}}</p>
+            </div>
+            <div class="col-md-3">
+                <button type="button" (click)="Like()" class="btn btn-light"><fa-icon [icon]="faThumbsUp" class="text-success col-sm-3" ></fa-icon></button>
+            </div>
+        </div>
+        
     <!-- </div> -->
     <!-- <div class="col-sm danger"> -->
-        <button type="button" (click)="Dislike()" class="btn btn-light"><fa-icon [icon]="faThumbsUp" class="text-success col-sm-3" ></fa-icon></button>
-  
+        
     <!-- </div> -->
 </div>
